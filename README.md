@@ -1,9 +1,27 @@
 # [`zk`]cli
 
-zk is a command line interface used to manage Zettalkasten notes. Requirements:
+zk is a command line interface used to manage a Zettalkasten infrastructure. Requirements:
 
 - A config file, placed in `$HOME/.zkcli`, can be generated with `python3 -m zk init`
-- A Zettelkasten directory with subfolders designed according to the config file specifications. Notably, there should be a `.Templates` folder with note templates.
+- A Zettelkasten directory with subfolders designed according to the config file specifications. Notably, there should be a `.Templates` folder with note templates. For example:
+
+```
+.
+├── .Templates
+│   ├── dailyYYMMDD.md
+│   ├── fleetingYYMMDD-HHMMtopic.md
+│   ├── literature.md
+│   ├── meetingYYMMDDtopic.md
+│   └── permanent.md
+├── .ctags.d
+│   └── md.ctags
+├── Fleeting
+├── Literature
+├── Permanent
+├── Structure
+├── index.md
+└── tags
+```
 
 # Installation
 
